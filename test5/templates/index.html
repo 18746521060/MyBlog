@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>模板</title>
+    <style>
+        *{
+            margin: 0;
+            padding:0;
+        }
+        body{
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <p>
+        {% for article in articles %}
+            创建时间{{ article.create_time|format_time }}<br>
+        {% endfor %}
+    </p>
+</body>
+</html>
